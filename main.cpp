@@ -431,4 +431,24 @@ void Save(){
 		salesFile << salesList[i].Id << "," << salesList[i].NationalCode << "," << salesList[i].DrugId << "," << salesList[i].Amount << endl;
 	}
 	salesFile.close();
+	// Reports Save
+	ofstream reportFile("Report.html");
+	reportFile << "<!doctype html><html><head><meta charset=\"utf-8\"><title>Drug Store</title><style>";
+	reportFile << "table { border-collapse: collapse; text-align: left; width: 100%; } {font: normal 12px/150% Arial, Helvetica, sans-serif; background: #fff; overflow: hidden; border: 1px solid #991821; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; }table td, table th { padding: 3px 10px; }table thead th {background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #991821), color-stop(1, #80141C) );background:-moz-linear-gradient( center top, #991821 5%, #80141C 100% );filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#991821', endColorstr='#80141C');background-color:#991821; color:#FFFFFF; font-size: 15px; font-weight: bold; border-left: 1px solid #B01C26; } table thead th:first-child { border: none; }table tbody td { color: #80141C; border-left: 1px solid #F7CDCD;font-size: 12px;font-weight: normal; }table tbody .alt td { background: #F7CDCD; color: #80141C; }table tbody td:first-child { border-left: none; }table tbody tr:last-child td { border-bottom: none; }table tfoot td div { border-top: 1px solid #991821;background: #F7CDCD;} table tfoot td { padding: 0; font-size: 12px } table tfoot td div{ padding: 2px; }table tfoot td ul { margin: 0; padding:0; list-style: none; text-align: right; }table tfoot  li { display: inline; }table tfoot li a { text-decoration: none; display: inline-block;  padding: 2px 8px; margin: 1px;color: #FFFFFF;border: 1px solid #991821;-webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #991821), color-stop(1, #80141C) );background:-moz-linear-gradient( center top, #991821 5%, #80141C 100% );filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#991821', endColorstr='#80141C');background-color:#991821; }table tfoot ul.active, table tfoot ul a:hover { text-decoration: none;border-color: #80141C; color: #FFFFFF; background: none; background-color:#991821;}div.dhtmlx_window_active, div.dhx_modal_cover_dv { position: fixed !important; }";
+	reportFile << "</style></head><body><table><tbody><tr><th>Factor Number</th><th>Drug Name</th><th>National Code</th><th>Amount</th></tr>" << endl;
+	for (int i = 0 ; i < salesCount ; i ++)
+	{
+		reportFile << "<tr><td>" << salesList[i].Id << "</td><td>";
+		// drug name
+		for (int j = 0; j < drugsCount; j ++)
+		{
+			if (drugsList[j].Id == salesList[i].DrugId)
+			{
+				reportFile << drugsList[j].Name;
+			}
+		}
+		reportFile << "</td><td>" << salesList[i].NationalCode << "</td><td>" << salesList[i].Amount << "</td></tr>" << endl;
+	}
+	reportFile << "</tbody></table></body></html>";
+	reportFile.close();
 }

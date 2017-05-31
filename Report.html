@@ -1,0 +1,684 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Drug Store</title><style>table { border-collapse: collapse; text-align: left; width: 100%; } {font: normal 12px/150% Arial, Helvetica, sans-serif; background: #fff; overflow: hidden; border: 1px solid #991821; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; }table td, table th { padding: 3px 10px; }table thead th {background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #991821), color-stop(1, #80141C) );background:-moz-linear-gradient( center top, #991821 5%, #80141C 100% );filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#991821', endColorstr='#80141C');background-color:#991821; color:#FFFFFF; font-size: 15px; font-weight: bold; border-left: 1px solid #B01C26; } table thead th:first-child { border: none; }table tbody td { color: #80141C; border-left: 1px solid #F7CDCD;font-size: 12px;font-weight: normal; }table tbody .alt td { background: #F7CDCD; color: #80141C; }table tbody td:first-child { border-left: none; }table tbody tr:last-child td { border-bottom: none; }table tfoot td div { border-top: 1px solid #991821;background: #F7CDCD;} table tfoot td { padding: 0; font-size: 12px } table tfoot td div{ padding: 2px; }table tfoot td ul { margin: 0; padding:0; list-style: none; text-align: right; }table tfoot  li { display: inline; }table tfoot li a { text-decoration: none; display: inline-block;  padding: 2px 8px; margin: 1px;color: #FFFFFF;border: 1px solid #991821;-webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #991821), color-stop(1, #80141C) );background:-moz-linear-gradient( center top, #991821 5%, #80141C 100% );filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#991821', endColorstr='#80141C');background-color:#991821; }table tfoot ul.active, table tfoot ul a:hover { text-decoration: none;border-color: #80141C; color: #FFFFFF; background: none; background-color:#991821;}div.dhtmlx_window_active, div.dhx_modal_cover_dv { position: fixed !important; }</style></head><body><table><tbody><tr><th>Factor Number</th><th>Drug Name</th><th>National Code</th><th>Amount</th></tr>
+<tr><td>1</td><td>Abatacept (Orencia)</td><td>39914077465</td><td>5</td></tr>
+<tr><td>2</td><td>Abelcet (Amphotericin B Injection)</td><td>58068323076</td><td>4</td></tr>
+<tr><td>3</td><td>Abacavir Sulfate- Lamivudine- and Zidovudine (Trizivir)</td><td>96054855960</td><td>10</td></tr>
+<tr><td>4</td><td>Absorbable Gelatin Sponge- USP (Gelfoam Sponge)</td><td>33688139228</td><td>6</td></tr>
+<tr><td>5</td><td>Abacavir Sulfate and Lamivudine Tablets (Epzicom)</td><td>32609966502</td><td>7</td></tr>
+<tr><td>6</td><td>Absorbable Gelatin Powder (Gelfoam)</td><td>9500669120</td><td>4</td></tr>
+<tr><td>7</td><td>Abacavir Sulfate and Lamivudine Tablets (Epzicom)</td><td>83936379933</td><td>3</td></tr>
+<tr><td>8</td><td>Abacavir- Dolutegravir- and Lamivudine Film</td><td>84428715064</td><td>2</td></tr>
+<tr><td>9</td><td>Ablavar (Gadofosveset Trisodium Injection)</td><td>26258889015</td><td>5</td></tr>
+<tr><td>10</td><td>Absorbable Gelatin Sterile Ophthalmic Film (Gelfilm )</td><td>87864787158</td><td>5</td></tr>
+<tr><td>11</td><td>Abstral (Fentanyl Sublingual Tablets)</td><td>73792304621</td><td>4</td></tr>
+<tr><td>12</td><td>Abacavir Sulfate (Ziagen)</td><td>67845071492</td><td>10</td></tr>
+<tr><td>13</td><td>Abarelix (Plenaxis)</td><td>59256707537</td><td>3</td></tr>
+<tr><td>14</td><td>Absorbable Gelatin Dental Sponge (Gelfoam Dental Sponge)</td><td>18927705481</td><td>4</td></tr>
+<tr><td>15</td><td>Absorbable Gelatin Powder (Gelfoam)</td><td>69572185414</td><td>3</td></tr>
+<tr><td>16</td><td>Abstral (Fentanyl Sublingual Tablets)</td><td>82651120234</td><td>5</td></tr>
+<tr><td>17</td><td>Abobotulinumtoxin A Injection (Dysport)</td><td>1494376358</td><td>9</td></tr>
+<tr><td>18</td><td>Abacavir Sulfate- Lamivudine- and Zidovudine (Trizivir)</td><td>61610464967</td><td>4</td></tr>
+<tr><td>19</td><td>Abiraterone Acetate Tablets (Zytiga)</td><td>91663516752</td><td>8</td></tr>
+<tr><td>20</td><td>Abelcet (Amphotericin B Injection)</td><td>12443811070</td><td>5</td></tr>
+<tr><td>21</td><td>Abobotulinumtoxin A Injection (Dysport)</td><td>78216826938</td><td>4</td></tr>
+<tr><td>22</td><td>Absorbable Gelatin Dental Sponge (Gelfoam Dental Sponge)</td><td>8754251662</td><td>10</td></tr>
+<tr><td>23</td><td>Abstral (Fentanyl Sublingual Tablets)</td><td>21254061117</td><td>10</td></tr>
+<tr><td>24</td><td>Absorbable Gelatin Powder (Gelfoam)</td><td>82069145327</td><td>5</td></tr>
+<tr><td>25</td><td>Abstral (Fentanyl Sublingual Tablets)</td><td>66827835618</td><td>1</td></tr>
+<tr><td>26</td><td>Ablavar (Gadofosveset Trisodium Injection)</td><td>60416245.5</td><td>2</td></tr>
+<tr><td>27</td><td>Abacavir Sulfate- Lamivudine- and Zidovudine (Trizivir)</td><td>99142342143</td><td>8</td></tr>
+<tr><td>28</td><td>Abraxane (Albumin</td><td>88109027376</td><td>2</td></tr>
+<tr><td>29</td><td>Abilify Maintena (Aripiprazole Extended</td><td>54467021134</td><td>6</td></tr>
+<tr><td>30</td><td>Abstral (Fentanyl Sublingual Tablets)</td><td>12412937680</td><td>3</td></tr>
+<tr><td>31</td><td>Abatacept (Orencia)</td><td>76617546650</td><td>7</td></tr>
+<tr><td>32</td><td>Abelcet (Amphotericin B Injection)</td><td>23458344799</td><td>9</td></tr>
+<tr><td>33</td><td>Absorbable Gelatin Powder (Gelfoam)</td><td>12246197357</td><td>3</td></tr>
+<tr><td>34</td><td>Abacavir Sulfate (Ziagen)</td><td>94093583386</td><td>7</td></tr>
+<tr><td>35</td><td>Abilify Maintena (Aripiprazole Extended</td><td>98173384411</td><td>6</td></tr>
+<tr><td>36</td><td>Abraxane (Albumin</td><td>43045633751</td><td>6</td></tr>
+<tr><td>37</td><td>Abstral (Fentanyl Sublingual Tablets)</td><td>58619851582</td><td>9</td></tr>
+<tr><td>38</td><td>Abatacept (Orencia)</td><td>86988125055</td><td>7</td></tr>
+<tr><td>39</td><td>Abciximab (ReoPro)</td><td>33530721689</td><td>3</td></tr>
+<tr><td>40</td><td>Absorbable Gelatin Sterile Ophthalmic Film (Gelfilm )</td><td>4344503936</td><td>3</td></tr>
+<tr><td>41</td><td>Abacavir Sulfate and Lamivudine Tablets (Epzicom)</td><td>80774029191</td><td>3</td></tr>
+<tr><td>42</td><td>Abarelix (Plenaxis)</td><td>2034823707</td><td>2</td></tr>
+<tr><td>43</td><td>Abciximab (ReoPro)</td><td>40677423337</td><td>5</td></tr>
+<tr><td>44</td><td>Abiraterone Acetate Tablets (Zytiga)</td><td>50753988081</td><td>7</td></tr>
+<tr><td>45</td><td>Abacavir Sulfate (Ziagen)</td><td>83238746775</td><td>8</td></tr>
+<tr><td>46</td><td>Abciximab (ReoPro)</td><td>47230794469</td><td>1</td></tr>
+<tr><td>47</td><td>Abstral (Fentanyl Sublingual Tablets)</td><td>66163834870</td><td>4</td></tr>
+<tr><td>48</td><td>Abacavir Sulfate and Lamivudine Tablets (Epzicom)</td><td>53388739754</td><td>4</td></tr>
+<tr><td>49</td><td>Abraxane (Albumin</td><td>90061010034</td><td>9</td></tr>
+<tr><td>50</td><td>Abobotulinumtoxin A Injection (Dysport)</td><td>21921608066</td><td>9</td></tr>
+<tr><td>51</td><td>Abatacept (Orencia)</td><td>56061431453</td><td>3</td></tr>
+<tr><td>52</td><td>Abelcet (Amphotericin B Injection)</td><td>91223620670</td><td>10</td></tr>
+<tr><td>53</td><td>Abacavir Sulfate and Lamivudine Tablets (Epzicom)</td><td>26208177396</td><td>1</td></tr>
+<tr><td>54</td><td>Abacavir Sulfate and Lamivudine Tablets (Epzicom)</td><td>27554401522</td><td>6</td></tr>
+<tr><td>55</td><td>Abilify (Aripiprazole)</td><td>28824919313</td><td>6</td></tr>
+<tr><td>56</td><td>Abilify (Aripiprazole)</td><td>84409101204</td><td>9</td></tr>
+<tr><td>57</td><td>Abatacept (Orencia)</td><td>34478138330</td><td>5</td></tr>
+<tr><td>58</td><td>Abatacept (Orencia)</td><td>6919809587</td><td>7</td></tr>
+<tr><td>59</td><td>Abacavir Sulfate- Lamivudine- and Zidovudine (Trizivir)</td><td>63395852774</td><td>3</td></tr>
+<tr><td>60</td><td>Abatacept (Orencia)</td><td>98886733074</td><td>1</td></tr>
+<tr><td>61</td><td>Abacavir Sulfate- Lamivudine- and Zidovudine (Trizivir)</td><td>35057844590</td><td>4</td></tr>
+<tr><td>62</td><td>Abacavir Sulfate- Lamivudine- and Zidovudine (Trizivir)</td><td>92990223183</td><td>4</td></tr>
+<tr><td>63</td><td>Absorbable Gelatin Powder (Gelfoam)</td><td>86617215388</td><td>8</td></tr>
+<tr><td>64</td><td>Abciximab (ReoPro)</td><td>74893501174</td><td>7</td></tr>
+<tr><td>65</td><td>Abatacept (Orencia)</td><td>71521530110</td><td>6</td></tr>
+<tr><td>66</td><td>Abiraterone Acetate Tablets (Zytiga)</td><td>85902678734</td><td>1</td></tr>
+<tr><td>67</td><td>Abraxane (Albumin</td><td>92632460333</td><td>10</td></tr>
+<tr><td>68</td><td>Abacavir Sulfate and Lamivudine Tablets (Epzicom)</td><td>80214737815</td><td>6</td></tr>
+<tr><td>69</td><td>Abacavir Sulfate (Ziagen)</td><td>8423707296</td><td>6</td></tr>
+<tr><td>70</td><td>Abacavir Sulfate and Lamivudine Tablets (Epzicom)</td><td>24691222683</td><td>3</td></tr>
+<tr><td>71</td><td>Ablavar (Gadofosveset Trisodium Injection)</td><td>15221172097</td><td>10</td></tr>
+<tr><td>72</td><td>Abarelix (Plenaxis)</td><td>70738987687</td><td>8</td></tr>
+<tr><td>73</td><td>Abelcet (Amphotericin B Injection)</td><td>67796422449</td><td>8</td></tr>
+<tr><td>74</td><td>Absorbable Gelatin Powder (Gelfoam)</td><td>77275996980</td><td>1</td></tr>
+<tr><td>75</td><td>Abelcet (Amphotericin B Injection)</td><td>67213639561</td><td>5</td></tr>
+<tr><td>76</td><td>Abilify Maintena (Aripiprazole Extended</td><td>37543847089</td><td>5</td></tr>
+<tr><td>77</td><td>Abiraterone Acetate Tablets (Zytiga)</td><td>95215941832</td><td>9</td></tr>
+<tr><td>78</td><td>Absorica (Isotretinoin)</td><td>3561638575</td><td>10</td></tr>
+<tr><td>79</td><td>Abatacept (Orencia)</td><td>88149148958</td><td>3</td></tr>
+<tr><td>80</td><td>Abacavir Sulfate (Ziagen)</td><td>52781399124</td><td>8</td></tr>
+<tr><td>81</td><td>Abiraterone Acetate Tablets (Zytiga)</td><td>58257728490</td><td>3</td></tr>
+<tr><td>82</td><td>Abilify Maintena (Aripiprazole Extended</td><td>75242762747</td><td>5</td></tr>
+<tr><td>83</td><td>Ablavar (Gadofosveset Trisodium Injection)</td><td>76393107561</td><td>2</td></tr>
+<tr><td>84</td><td>Absorbable Gelatin Compressed Sponge- USP (Gelfoam Compressed Sponge)</td><td>50809837033</td><td>7</td></tr>
+<tr><td>85</td><td>Abraxane (Albumin</td><td>57226347421</td><td>9</td></tr>
+<tr><td>86</td><td>Abstral (Fentanyl Sublingual Tablets)</td><td>41874394544</td><td>8</td></tr>
+<tr><td>87</td><td>Abilify Maintena (Aripiprazole Extended</td><td>46655347420</td><td>10</td></tr>
+<tr><td>88</td><td>Abacavir Sulfate (Ziagen)</td><td>96605864893</td><td>2</td></tr>
+<tr><td>89</td><td>Abiraterone Acetate Tablets (Zytiga)</td><td>99936083060</td><td>9</td></tr>
+<tr><td>90</td><td>Ablavar (Gadofosveset Trisodium Injection)</td><td>71675858863</td><td>9</td></tr>
+<tr><td>91</td><td>Absorbable Gelatin Powder (Gelfoam)</td><td>11554015617</td><td>2</td></tr>
+<tr><td>92</td><td>Abaloparatide Injection (Tymlos)</td><td>88160720302</td><td>3</td></tr>
+<tr><td>93</td><td>Abatacept (Orencia)</td><td>71679889315</td><td>9</td></tr>
+<tr><td>94</td><td>Abaloparatide Injection (Tymlos)</td><td>17046085590</td><td>5</td></tr>
+<tr><td>95</td><td>Abciximab (ReoPro)</td><td>69015917114</td><td>6</td></tr>
+<tr><td>96</td><td>Absorbable Gelatin Powder (Gelfoam)</td><td>98747762825</td><td>4</td></tr>
+<tr><td>97</td><td>Abstral (Fentanyl Sublingual Tablets)</td><td>70802922405</td><td>3</td></tr>
+<tr><td>98</td><td>Abacavir Sulfate- Lamivudine- and Zidovudine (Trizivir)</td><td>2065441732</td><td>9</td></tr>
+<tr><td>99</td><td>Absorica (Isotretinoin)</td><td>93524049028</td><td>2</td></tr>
+<tr><td>100</td><td>Absorbable Gelatin Powder (Gelfoam)</td><td>73931922870</td><td>8</td></tr>
+<tr><td>101</td><td>Abaloparatide Injection (Tymlos)</td><td>99370271703</td><td>3</td></tr>
+<tr><td>102</td><td>Abacavir Sulfate and Lamivudine Tablets (Epzicom)</td><td>60247548698</td><td>4</td></tr>
+<tr><td>103</td><td>Abiraterone Acetate Tablets (Zytiga)</td><td>82110244763</td><td>6</td></tr>
+<tr><td>104</td><td>Abilify (Aripiprazole)</td><td>58209291560</td><td>4</td></tr>
+<tr><td>105</td><td>Abraxane (Albumin</td><td>95866557310</td><td>5</td></tr>
+<tr><td>106</td><td>Abacavir Sulfate and Lamivudine Tablets (Epzicom)</td><td>28557817700</td><td>7</td></tr>
+<tr><td>107</td><td>Abatacept (Orencia)</td><td>28603466714</td><td>9</td></tr>
+<tr><td>108</td><td>Absorbable Gelatin Sterile Ophthalmic Film (Gelfilm )</td><td>54003115371</td><td>9</td></tr>
+<tr><td>109</td><td>Abacavir- Dolutegravir- and Lamivudine Film</td><td>19649256447</td><td>10</td></tr>
+<tr><td>110</td><td>Abiraterone Acetate Tablets (Zytiga)</td><td>46057212875</td><td>1</td></tr>
+<tr><td>111</td><td>Abstral (Fentanyl Sublingual Tablets)</td><td>31036490573</td><td>3</td></tr>
+<tr><td>112</td><td>Abilify (Aripiprazole)</td><td>49780996196</td><td>10</td></tr>
+<tr><td>113</td><td>Abiraterone Acetate Tablets (Zytiga)</td><td>75184861190</td><td>3</td></tr>
+<tr><td>114</td><td>Abaloparatide Injection (Tymlos)</td><td>7789420259</td><td>9</td></tr>
+<tr><td>115</td><td>Abatacept (Orencia)</td><td>88830675822</td><td>2</td></tr>
+<tr><td>116</td><td>Absorica (Isotretinoin)</td><td>69534929762</td><td>4</td></tr>
+<tr><td>117</td><td>Abatacept (Orencia)</td><td>28579683748</td><td>1</td></tr>
+<tr><td>118</td><td>Abelcet (Amphotericin B Injection)</td><td>8731459034</td><td>10</td></tr>
+<tr><td>119</td><td>Absorica (Isotretinoin)</td><td>67302972617</td><td>5</td></tr>
+<tr><td>120</td><td>Absorbable Gelatin Sterile Ophthalmic Film (Gelfilm )</td><td>68503103137</td><td>3</td></tr>
+<tr><td>121</td><td>Abacavir Sulfate and Lamivudine Tablets (Epzicom)</td><td>90943421162</td><td>9</td></tr>
+<tr><td>122</td><td>Absorbable Gelatin Sponge- USP (Gelfoam Sponge)</td><td>98157317929</td><td>6</td></tr>
+<tr><td>123</td><td>Absorbable Gelatin Sponge- USP (Gelfoam Sponge)</td><td>70958738069</td><td>6</td></tr>
+<tr><td>124</td><td>Absorica (Isotretinoin)</td><td>64111555495</td><td>2</td></tr>
+<tr><td>125</td><td>Abstral (Fentanyl Sublingual Tablets)</td><td>49935586154</td><td>8</td></tr>
+<tr><td>126</td><td>Abaloparatide Injection (Tymlos)</td><td>72594439643</td><td>2</td></tr>
+<tr><td>127</td><td>Abacavir Sulfate (Ziagen)</td><td>87632982445</td><td>3</td></tr>
+<tr><td>128</td><td>Abilify (Aripiprazole)</td><td>42412574208</td><td>7</td></tr>
+<tr><td>129</td><td>Abilify (Aripiprazole)</td><td>46693633362</td><td>9</td></tr>
+<tr><td>130</td><td>Abciximab (ReoPro)</td><td>50474439457</td><td>2</td></tr>
+<tr><td>131</td><td>Ablavar (Gadofosveset Trisodium Injection)</td><td>93848049239</td><td>1</td></tr>
+<tr><td>132</td><td>Abobotulinumtoxin A Injection (Dysport)</td><td>126968458.7</td><td>4</td></tr>
+<tr><td>133</td><td>Absorbable Gelatin Compressed Sponge- USP (Gelfoam Compressed Sponge)</td><td>1136346096</td><td>10</td></tr>
+<tr><td>134</td><td>Abobotulinumtoxin A Injection (Dysport)</td><td>10218321444</td><td>3</td></tr>
+<tr><td>135</td><td>Abatacept (Orencia)</td><td>34447048109</td><td>8</td></tr>
+<tr><td>136</td><td>Absorbable Gelatin Compressed Sponge- USP (Gelfoam Compressed Sponge)</td><td>8837759577</td><td>1</td></tr>
+<tr><td>137</td><td>Abobotulinumtoxin A Injection (Dysport)</td><td>2010626765</td><td>3</td></tr>
+<tr><td>138</td><td>Abacavir- Dolutegravir- and Lamivudine Film</td><td>46697327245</td><td>3</td></tr>
+<tr><td>139</td><td>Abacavir Sulfate (Ziagen)</td><td>12499032081</td><td>6</td></tr>
+<tr><td>140</td><td>Absorbable Gelatin Sterile Ophthalmic Film (Gelfilm )</td><td>54762411145</td><td>3</td></tr>
+<tr><td>141</td><td>Ablavar (Gadofosveset Trisodium Injection)</td><td>51979103223</td><td>8</td></tr>
+<tr><td>142</td><td>Ablavar (Gadofosveset Trisodium Injection)</td><td>76429568341</td><td>4</td></tr>
+<tr><td>143</td><td>Abacavir Sulfate and Lamivudine Tablets (Epzicom)</td><td>12491662775</td><td>1</td></tr>
+<tr><td>144</td><td>Abobotulinumtoxin A Injection (Dysport)</td><td>63960086789</td><td>7</td></tr>
+<tr><td>145</td><td>Absorbable Gelatin Dental Sponge (Gelfoam Dental Sponge)</td><td>97451181306</td><td>8</td></tr>
+<tr><td>146</td><td>Absorbable Gelatin Powder (Gelfoam)</td><td>94535890285</td><td>7</td></tr>
+<tr><td>147</td><td>Abacavir Sulfate- Lamivudine- and Zidovudine (Trizivir)</td><td>50676604810</td><td>6</td></tr>
+<tr><td>148</td><td>Abacavir Sulfate- Lamivudine- and Zidovudine (Trizivir)</td><td>50429125574</td><td>6</td></tr>
+<tr><td>149</td><td>Absorbable Gelatin Dental Sponge (Gelfoam Dental Sponge)</td><td>41219067598</td><td>6</td></tr>
+<tr><td>150</td><td>Absorbable Gelatin Sterile Ophthalmic Film (Gelfilm )</td><td>71542738088</td><td>4</td></tr>
+<tr><td>151</td><td>Ablavar (Gadofosveset Trisodium Injection)</td><td>32529529980</td><td>4</td></tr>
+<tr><td>152</td><td>Abacavir Sulfate and Lamivudine Tablets (Epzicom)</td><td>41088160535</td><td>1</td></tr>
+<tr><td>153</td><td>Abarelix (Plenaxis)</td><td>95219807437</td><td>8</td></tr>
+<tr><td>154</td><td>Abelcet (Amphotericin B Injection)</td><td>93807045830</td><td>5</td></tr>
+<tr><td>155</td><td>Abacavir Sulfate (Ziagen)</td><td>73886019941</td><td>9</td></tr>
+<tr><td>156</td><td>Abacavir Sulfate and Lamivudine Tablets (Epzicom)</td><td>41208841200</td><td>10</td></tr>
+<tr><td>157</td><td>Absorbable Gelatin Dental Sponge (Gelfoam Dental Sponge)</td><td>14180222026</td><td>7</td></tr>
+<tr><td>158</td><td>Ablavar (Gadofosveset Trisodium Injection)</td><td>71025370234</td><td>6</td></tr>
+<tr><td>159</td><td>Abatacept (Orencia)</td><td>43159896596</td><td>2</td></tr>
+<tr><td>160</td><td>Abelcet (Amphotericin B Injection)</td><td>22493746234</td><td>3</td></tr>
+<tr><td>161</td><td>Abraxane (Albumin</td><td>7753224725</td><td>8</td></tr>
+<tr><td>162</td><td>Abilify (Aripiprazole)</td><td>93689527677</td><td>9</td></tr>
+<tr><td>163</td><td>Abacavir Sulfate- Lamivudine- and Zidovudine (Trizivir)</td><td>68061076819</td><td>5</td></tr>
+<tr><td>164</td><td>Abstral (Fentanyl Sublingual Tablets)</td><td>73963483032</td><td>5</td></tr>
+<tr><td>165</td><td>Abelcet (Amphotericin B Injection)</td><td>11190762709</td><td>8</td></tr>
+<tr><td>166</td><td>Abraxane (Albumin</td><td>85975574131</td><td>8</td></tr>
+<tr><td>167</td><td>Abobotulinumtoxin A Injection (Dysport)</td><td>56959324176</td><td>3</td></tr>
+<tr><td>168</td><td>Ablavar (Gadofosveset Trisodium Injection)</td><td>60110560452</td><td>9</td></tr>
+<tr><td>169</td><td>Absorbable Gelatin Powder (Gelfoam)</td><td>24733486034</td><td>3</td></tr>
+<tr><td>170</td><td>Abobotulinumtoxin A Injection (Dysport)</td><td>10970909612</td><td>6</td></tr>
+<tr><td>171</td><td>Absorbable Gelatin Sponge- USP (Gelfoam Sponge)</td><td>3518666232</td><td>5</td></tr>
+<tr><td>172</td><td>Abacavir Sulfate (Ziagen)</td><td>81787126771</td><td>9</td></tr>
+<tr><td>173</td><td>Abatacept (Orencia)</td><td>37063468891</td><td>8</td></tr>
+<tr><td>174</td><td>Abiraterone Acetate Tablets (Zytiga)</td><td>2884652166</td><td>8</td></tr>
+<tr><td>175</td><td>Abarelix (Plenaxis)</td><td>42475452367</td><td>10</td></tr>
+<tr><td>176</td><td>Abraxane (Albumin</td><td>89546752925</td><td>3</td></tr>
+<tr><td>177</td><td>Abacavir Sulfate- Lamivudine- and Zidovudine (Trizivir)</td><td>1873081022</td><td>6</td></tr>
+<tr><td>178</td><td>Abiraterone Acetate Tablets (Zytiga)</td><td>3418135766</td><td>5</td></tr>
+<tr><td>179</td><td>Abilify Maintena (Aripiprazole Extended</td><td>36684337799</td><td>5</td></tr>
+<tr><td>180</td><td>Abacavir Sulfate (Ziagen)</td><td>65356482062</td><td>5</td></tr>
+<tr><td>181</td><td>Abraxane (Albumin</td><td>5089698143</td><td>6</td></tr>
+<tr><td>182</td><td>Absorbable Gelatin Dental Sponge (Gelfoam Dental Sponge)</td><td>89211279975</td><td>4</td></tr>
+<tr><td>183</td><td>Abilify (Aripiprazole)</td><td>94802696557</td><td>9</td></tr>
+<tr><td>184</td><td>Absorica (Isotretinoin)</td><td>61852192528</td><td>5</td></tr>
+<tr><td>185</td><td>Abatacept (Orencia)</td><td>3106829540</td><td>6</td></tr>
+<tr><td>186</td><td>Abraxane (Albumin</td><td>35771852529</td><td>7</td></tr>
+<tr><td>187</td><td>Ablavar (Gadofosveset Trisodium Injection)</td><td>19101057784</td><td>3</td></tr>
+<tr><td>188</td><td>Abilify Maintena (Aripiprazole Extended</td><td>30334179063</td><td>9</td></tr>
+<tr><td>189</td><td>Absorbable Gelatin Sponge- USP (Gelfoam Sponge)</td><td>55679022991</td><td>7</td></tr>
+<tr><td>190</td><td>Abobotulinumtoxin A Injection (Dysport)</td><td>37391682165</td><td>1</td></tr>
+<tr><td>191</td><td>Abraxane (Albumin</td><td>54083791250</td><td>6</td></tr>
+<tr><td>192</td><td>Abilify (Aripiprazole)</td><td>27159126443</td><td>5</td></tr>
+<tr><td>193</td><td>Abaloparatide Injection (Tymlos)</td><td>35946484451</td><td>4</td></tr>
+<tr><td>194</td><td>Absorbable Gelatin Sponge- USP (Gelfoam Sponge)</td><td>11386467248</td><td>7</td></tr>
+<tr><td>195</td><td>Abacavir Sulfate- Lamivudine- and Zidovudine (Trizivir)</td><td>82642984986</td><td>5</td></tr>
+<tr><td>196</td><td>Abilify (Aripiprazole)</td><td>2073061928</td><td>6</td></tr>
+<tr><td>197</td><td>Abacavir Sulfate- Lamivudine- and Zidovudine (Trizivir)</td><td>70658012074</td><td>2</td></tr>
+<tr><td>198</td><td>Absorbable Gelatin Compressed Sponge- USP (Gelfoam Compressed Sponge)</td><td>47369690641</td><td>1</td></tr>
+<tr><td>199</td><td>Abiraterone Acetate Tablets (Zytiga)</td><td>79949734569</td><td>3</td></tr>
+<tr><td>200</td><td>Abacavir Sulfate (Ziagen)</td><td>25528308615</td><td>4</td></tr>
+<tr><td>201</td><td>Abiraterone Acetate Tablets (Zytiga)</td><td>33496465125</td><td>1</td></tr>
+<tr><td>202</td><td>Abilify (Aripiprazole)</td><td>16809578195</td><td>1</td></tr>
+<tr><td>203</td><td>Abatacept (Orencia)</td><td>91811965619</td><td>8</td></tr>
+<tr><td>204</td><td>Abilify (Aripiprazole)</td><td>53483396462</td><td>7</td></tr>
+<tr><td>205</td><td>Abobotulinumtoxin A Injection (Dysport)</td><td>62946462905</td><td>1</td></tr>
+<tr><td>206</td><td>Abraxane (Albumin</td><td>90039503646</td><td>1</td></tr>
+<tr><td>207</td><td>Abacavir Sulfate (Ziagen)</td><td>30683078512</td><td>2</td></tr>
+<tr><td>208</td><td>Abarelix (Plenaxis)</td><td>67040531989</td><td>3</td></tr>
+<tr><td>209</td><td>Abacavir Sulfate and Lamivudine Tablets (Epzicom)</td><td>53970463779</td><td>3</td></tr>
+<tr><td>210</td><td>Absorbable Gelatin Sterile Ophthalmic Film (Gelfilm )</td><td>27161650400</td><td>1</td></tr>
+<tr><td>211</td><td>Abraxane (Albumin</td><td>43285535642</td><td>10</td></tr>
+<tr><td>212</td><td>Abacavir Sulfate- Lamivudine- and Zidovudine (Trizivir)</td><td>44421234764</td><td>6</td></tr>
+<tr><td>213</td><td>Abiraterone Acetate Tablets (Zytiga)</td><td>66108244513</td><td>8</td></tr>
+<tr><td>214</td><td>Abiraterone Acetate Tablets (Zytiga)</td><td>26604903908</td><td>1</td></tr>
+<tr><td>215</td><td>Abatacept (Orencia)</td><td>45501886096</td><td>7</td></tr>
+<tr><td>216</td><td>Abraxane (Albumin</td><td>51670429202</td><td>1</td></tr>
+<tr><td>217</td><td>Abiraterone Acetate Tablets (Zytiga)</td><td>28273359506</td><td>8</td></tr>
+<tr><td>218</td><td>Ablavar (Gadofosveset Trisodium Injection)</td><td>28715795759</td><td>2</td></tr>
+<tr><td>219</td><td>Abacavir Sulfate- Lamivudine- and Zidovudine (Trizivir)</td><td>1234927105</td><td>4</td></tr>
+<tr><td>220</td><td>Abaloparatide Injection (Tymlos)</td><td>75634836110</td><td>4</td></tr>
+<tr><td>221</td><td>Abacavir Sulfate (Ziagen)</td><td>5731307709</td><td>3</td></tr>
+<tr><td>222</td><td>Abiraterone Acetate Tablets (Zytiga)</td><td>97440760806</td><td>3</td></tr>
+<tr><td>223</td><td>Abiraterone Acetate Tablets (Zytiga)</td><td>58600987968</td><td>5</td></tr>
+<tr><td>224</td><td>Absorbable Gelatin Sterile Ophthalmic Film (Gelfilm )</td><td>67823911274</td><td>2</td></tr>
+<tr><td>225</td><td>Absorbable Gelatin Sponge- USP (Gelfoam Sponge)</td><td>48808575556</td><td>4</td></tr>
+<tr><td>226</td><td>Abilify (Aripiprazole)</td><td>9836523726</td><td>3</td></tr>
+<tr><td>227</td><td>Abraxane (Albumin</td><td>23577270977</td><td>9</td></tr>
+<tr><td>228</td><td>Abilify (Aripiprazole)</td><td>34905204607</td><td>8</td></tr>
+<tr><td>229</td><td>Abobotulinumtoxin A Injection (Dysport)</td><td>90198867365</td><td>10</td></tr>
+<tr><td>230</td><td>Abiraterone Acetate Tablets (Zytiga)</td><td>73738570631</td><td>6</td></tr>
+<tr><td>231</td><td>Abstral (Fentanyl Sublingual Tablets)</td><td>10260793625</td><td>9</td></tr>
+<tr><td>232</td><td>Abatacept (Orencia)</td><td>25017987062</td><td>5</td></tr>
+<tr><td>233</td><td>Abaloparatide Injection (Tymlos)</td><td>39534940034</td><td>7</td></tr>
+<tr><td>234</td><td>Abiraterone Acetate Tablets (Zytiga)</td><td>69249761865</td><td>2</td></tr>
+<tr><td>235</td><td>Abacavir Sulfate and Lamivudine Tablets (Epzicom)</td><td>20241083773</td><td>8</td></tr>
+<tr><td>236</td><td>Abraxane (Albumin</td><td>19368032045</td><td>1</td></tr>
+<tr><td>237</td><td>Absorbable Gelatin Powder (Gelfoam)</td><td>38109194773</td><td>9</td></tr>
+<tr><td>238</td><td>Abraxane (Albumin</td><td>26821763189</td><td>6</td></tr>
+<tr><td>239</td><td>Abacavir Sulfate and Lamivudine Tablets (Epzicom)</td><td>48509062198</td><td>7</td></tr>
+<tr><td>240</td><td>Abiraterone Acetate Tablets (Zytiga)</td><td>45410703631</td><td>1</td></tr>
+<tr><td>241</td><td>Absorica (Isotretinoin)</td><td>73189671725</td><td>4</td></tr>
+<tr><td>242</td><td>Abiraterone Acetate Tablets (Zytiga)</td><td>91233419684</td><td>3</td></tr>
+<tr><td>243</td><td>Abiraterone Acetate Tablets (Zytiga)</td><td>14559947755</td><td>2</td></tr>
+<tr><td>244</td><td>Abobotulinumtoxin A Injection (Dysport)</td><td>52307996432</td><td>8</td></tr>
+<tr><td>245</td><td>Abraxane (Albumin</td><td>47308300405</td><td>3</td></tr>
+<tr><td>246</td><td>Absorbable Gelatin Dental Sponge (Gelfoam Dental Sponge)</td><td>12900691007</td><td>9</td></tr>
+<tr><td>247</td><td>Abilify Maintena (Aripiprazole Extended</td><td>89875493983</td><td>2</td></tr>
+<tr><td>248</td><td>Abacavir Sulfate (Ziagen)</td><td>45481278718</td><td>3</td></tr>
+<tr><td>249</td><td>Abacavir Sulfate (Ziagen)</td><td>20113066568</td><td>8</td></tr>
+<tr><td>250</td><td>Abelcet (Amphotericin B Injection)</td><td>15037550241</td><td>5</td></tr>
+<tr><td>251</td><td>Abelcet (Amphotericin B Injection)</td><td>79315161091</td><td>9</td></tr>
+<tr><td>252</td><td>Abacavir Sulfate and Lamivudine Tablets (Epzicom)</td><td>17481101088</td><td>9</td></tr>
+<tr><td>253</td><td>Abiraterone Acetate Tablets (Zytiga)</td><td>56232882639</td><td>6</td></tr>
+<tr><td>254</td><td>Abstral (Fentanyl Sublingual Tablets)</td><td>92805892281</td><td>10</td></tr>
+<tr><td>255</td><td>Absorbable Gelatin Powder (Gelfoam)</td><td>29273548716</td><td>2</td></tr>
+<tr><td>256</td><td>Abacavir Sulfate and Lamivudine Tablets (Epzicom)</td><td>79440642500</td><td>5</td></tr>
+<tr><td>257</td><td>Absorbable Gelatin Compressed Sponge- USP (Gelfoam Compressed Sponge)</td><td>28209382953</td><td>1</td></tr>
+<tr><td>258</td><td>Abacavir Sulfate (Ziagen)</td><td>2551828796</td><td>10</td></tr>
+<tr><td>259</td><td>Abilify Maintena (Aripiprazole Extended</td><td>98113874861</td><td>4</td></tr>
+<tr><td>260</td><td>Absorbable Gelatin Sterile Ophthalmic Film (Gelfilm )</td><td>88847959214</td><td>5</td></tr>
+<tr><td>261</td><td>Absorbable Gelatin Dental Sponge (Gelfoam Dental Sponge)</td><td>98739279646</td><td>9</td></tr>
+<tr><td>262</td><td>Abacavir Sulfate (Ziagen)</td><td>14677643009</td><td>8</td></tr>
+<tr><td>263</td><td>Abacavir Sulfate- Lamivudine- and Zidovudine (Trizivir)</td><td>75731728799</td><td>8</td></tr>
+<tr><td>264</td><td>Absorbable Gelatin Sponge- USP (Gelfoam Sponge)</td><td>80257604796</td><td>3</td></tr>
+<tr><td>265</td><td>Ablavar (Gadofosveset Trisodium Injection)</td><td>28654245293</td><td>6</td></tr>
+<tr><td>266</td><td>Absorica (Isotretinoin)</td><td>28237668525</td><td>5</td></tr>
+<tr><td>267</td><td>Absorbable Gelatin Sponge- USP (Gelfoam Sponge)</td><td>18987326191</td><td>9</td></tr>
+<tr><td>268</td><td>Absorbable Gelatin Dental Sponge (Gelfoam Dental Sponge)</td><td>22907848203</td><td>1</td></tr>
+<tr><td>269</td><td>Abobotulinumtoxin A Injection (Dysport)</td><td>31612832075</td><td>3</td></tr>
+<tr><td>270</td><td>Abstral (Fentanyl Sublingual Tablets)</td><td>35463958306</td><td>10</td></tr>
+<tr><td>271</td><td>Abciximab (ReoPro)</td><td>64889480047</td><td>2</td></tr>
+<tr><td>272</td><td>Absorbable Gelatin Compressed Sponge- USP (Gelfoam Compressed Sponge)</td><td>39787439694</td><td>4</td></tr>
+<tr><td>273</td><td>Absorbable Gelatin Dental Sponge (Gelfoam Dental Sponge)</td><td>34189024802</td><td>1</td></tr>
+<tr><td>274</td><td>Absorbable Gelatin Sponge- USP (Gelfoam Sponge)</td><td>28638464115</td><td>7</td></tr>
+<tr><td>275</td><td>Absorbable Gelatin Compressed Sponge- USP (Gelfoam Compressed Sponge)</td><td>19358394248</td><td>10</td></tr>
+<tr><td>276</td><td>Absorbable Gelatin Powder (Gelfoam)</td><td>58073173400</td><td>9</td></tr>
+<tr><td>277</td><td>Absorbable Gelatin Compressed Sponge- USP (Gelfoam Compressed Sponge)</td><td>39880167964</td><td>5</td></tr>
+<tr><td>278</td><td>Abilify (Aripiprazole)</td><td>76498624954</td><td>1</td></tr>
+<tr><td>279</td><td>Abobotulinumtoxin A Injection (Dysport)</td><td>36042130583</td><td>9</td></tr>
+<tr><td>280</td><td>Absorbable Gelatin Sterile Ophthalmic Film (Gelfilm )</td><td>93235429447</td><td>9</td></tr>
+<tr><td>281</td><td>Abaloparatide Injection (Tymlos)</td><td>70922600433</td><td>7</td></tr>
+<tr><td>282</td><td>Abraxane (Albumin</td><td>50588883675</td><td>1</td></tr>
+<tr><td>283</td><td>Absorbable Gelatin Compressed Sponge- USP (Gelfoam Compressed Sponge)</td><td>77275896739</td><td>3</td></tr>
+<tr><td>284</td><td>Abacavir Sulfate- Lamivudine- and Zidovudine (Trizivir)</td><td>54499627817</td><td>8</td></tr>
+<tr><td>285</td><td>Absorbable Gelatin Sterile Ophthalmic Film (Gelfilm )</td><td>90927665555</td><td>9</td></tr>
+<tr><td>286</td><td>Abacavir Sulfate- Lamivudine- and Zidovudine (Trizivir)</td><td>76533726360</td><td>8</td></tr>
+<tr><td>287</td><td>Abacavir Sulfate- Lamivudine- and Zidovudine (Trizivir)</td><td>71479053714</td><td>9</td></tr>
+<tr><td>288</td><td>Abacavir Sulfate- Lamivudine- and Zidovudine (Trizivir)</td><td>35860655185</td><td>5</td></tr>
+<tr><td>289</td><td>Abacavir Sulfate and Lamivudine Tablets (Epzicom)</td><td>81200082203</td><td>7</td></tr>
+<tr><td>290</td><td>Abilify Maintena (Aripiprazole Extended</td><td>57687123714</td><td>6</td></tr>
+<tr><td>291</td><td>Abobotulinumtoxin A Injection (Dysport)</td><td>9309668798</td><td>7</td></tr>
+<tr><td>292</td><td>Abstral (Fentanyl Sublingual Tablets)</td><td>31017185270</td><td>1</td></tr>
+<tr><td>293</td><td>Abstral (Fentanyl Sublingual Tablets)</td><td>30840443504</td><td>5</td></tr>
+<tr><td>294</td><td>Abelcet (Amphotericin B Injection)</td><td>96598619524</td><td>10</td></tr>
+<tr><td>295</td><td>Absorbable Gelatin Compressed Sponge- USP (Gelfoam Compressed Sponge)</td><td>9372038718</td><td>3</td></tr>
+<tr><td>296</td><td>Abiraterone Acetate Tablets (Zytiga)</td><td>68060657758</td><td>6</td></tr>
+<tr><td>297</td><td>Abiraterone Acetate Tablets (Zytiga)</td><td>41155883215</td><td>4</td></tr>
+<tr><td>298</td><td>Abstral (Fentanyl Sublingual Tablets)</td><td>25094451217</td><td>1</td></tr>
+<tr><td>299</td><td>Abacavir Sulfate- Lamivudine- and Zidovudine (Trizivir)</td><td>20589377914</td><td>3</td></tr>
+<tr><td>300</td><td>Ablavar (Gadofosveset Trisodium Injection)</td><td>66850237750</td><td>6</td></tr>
+<tr><td>301</td><td>Abacavir Sulfate and Lamivudine Tablets (Epzicom)</td><td>96088683532</td><td>9</td></tr>
+<tr><td>302</td><td>Abraxane (Albumin</td><td>62193421564</td><td>9</td></tr>
+<tr><td>303</td><td>Abilify Maintena (Aripiprazole Extended</td><td>66757520113</td><td>1</td></tr>
+<tr><td>304</td><td>Ablavar (Gadofosveset Trisodium Injection)</td><td>28917615389</td><td>4</td></tr>
+<tr><td>305</td><td>Abatacept (Orencia)</td><td>98814321524</td><td>6</td></tr>
+<tr><td>306</td><td>Absorbable Gelatin Powder (Gelfoam)</td><td>55799807313</td><td>6</td></tr>
+<tr><td>307</td><td>Ablavar (Gadofosveset Trisodium Injection)</td><td>94588660223</td><td>7</td></tr>
+<tr><td>308</td><td>Abobotulinumtoxin A Injection (Dysport)</td><td>14912055339</td><td>10</td></tr>
+<tr><td>309</td><td>Absorbable Gelatin Powder (Gelfoam)</td><td>10329500312</td><td>1</td></tr>
+<tr><td>310</td><td>Ablavar (Gadofosveset Trisodium Injection)</td><td>2464551494</td><td>4</td></tr>
+<tr><td>311</td><td>Abstral (Fentanyl Sublingual Tablets)</td><td>95535320847</td><td>5</td></tr>
+<tr><td>312</td><td>Abilify (Aripiprazole)</td><td>40150753936</td><td>10</td></tr>
+<tr><td>313</td><td>Abstral (Fentanyl Sublingual Tablets)</td><td>75444621798</td><td>8</td></tr>
+<tr><td>314</td><td>Abobotulinumtoxin A Injection (Dysport)</td><td>73282776640</td><td>9</td></tr>
+<tr><td>315</td><td>Abilify (Aripiprazole)</td><td>10754946936</td><td>4</td></tr>
+<tr><td>316</td><td>Absorbable Gelatin Sponge- USP (Gelfoam Sponge)</td><td>81592558207</td><td>1</td></tr>
+<tr><td>317</td><td>Absorbable Gelatin Sterile Ophthalmic Film (Gelfilm )</td><td>91609804075</td><td>7</td></tr>
+<tr><td>318</td><td>Abacavir Sulfate and Lamivudine Tablets (Epzicom)</td><td>23195458394</td><td>4</td></tr>
+<tr><td>319</td><td>Absorica (Isotretinoin)</td><td>20729638270</td><td>9</td></tr>
+<tr><td>320</td><td>Abacavir Sulfate (Ziagen)</td><td>35160404081</td><td>5</td></tr>
+<tr><td>321</td><td>Abraxane (Albumin</td><td>60184639100</td><td>1</td></tr>
+<tr><td>322</td><td>Absorbable Gelatin Sterile Ophthalmic Film (Gelfilm )</td><td>72564305609</td><td>7</td></tr>
+<tr><td>323</td><td>Abatacept (Orencia)</td><td>4355810746</td><td>6</td></tr>
+<tr><td>324</td><td>Abaloparatide Injection (Tymlos)</td><td>62784454473</td><td>1</td></tr>
+<tr><td>325</td><td>Abiraterone Acetate Tablets (Zytiga)</td><td>91504079657</td><td>7</td></tr>
+<tr><td>326</td><td>Abraxane (Albumin</td><td>92979125131</td><td>7</td></tr>
+<tr><td>327</td><td>Abatacept (Orencia)</td><td>41105641244</td><td>9</td></tr>
+<tr><td>328</td><td>Abciximab (ReoPro)</td><td>54757079103</td><td>4</td></tr>
+<tr><td>329</td><td>Abatacept (Orencia)</td><td>98260934212</td><td>6</td></tr>
+<tr><td>330</td><td>Absorbable Gelatin Compressed Sponge- USP (Gelfoam Compressed Sponge)</td><td>42987889286</td><td>6</td></tr>
+<tr><td>331</td><td>Abilify Maintena (Aripiprazole Extended</td><td>27295411065</td><td>2</td></tr>
+<tr><td>332</td><td>Abacavir Sulfate (Ziagen)</td><td>7804879119</td><td>7</td></tr>
+<tr><td>333</td><td>Abatacept (Orencia)</td><td>49791895999</td><td>5</td></tr>
+<tr><td>334</td><td>Absorbable Gelatin Compressed Sponge- USP (Gelfoam Compressed Sponge)</td><td>15845769298</td><td>6</td></tr>
+<tr><td>335</td><td>Absorbable Gelatin Sterile Ophthalmic Film (Gelfilm )</td><td>39271912833</td><td>10</td></tr>
+<tr><td>336</td><td>Abobotulinumtoxin A Injection (Dysport)</td><td>77551238335</td><td>9</td></tr>
+<tr><td>337</td><td>Abatacept (Orencia)</td><td>39569056149</td><td>8</td></tr>
+<tr><td>338</td><td>Abarelix (Plenaxis)</td><td>57787788075</td><td>2</td></tr>
+<tr><td>339</td><td>Ablavar (Gadofosveset Trisodium Injection)</td><td>79722229739</td><td>2</td></tr>
+<tr><td>340</td><td>Abatacept (Orencia)</td><td>6338427640</td><td>10</td></tr>
+<tr><td>341</td><td>Abacavir Sulfate- Lamivudine- and Zidovudine (Trizivir)</td><td>81137584999</td><td>5</td></tr>
+<tr><td>342</td><td>Abilify (Aripiprazole)</td><td>52852409772</td><td>8</td></tr>
+<tr><td>343</td><td>Abaloparatide Injection (Tymlos)</td><td>10807066385</td><td>1</td></tr>
+<tr><td>344</td><td>Absorbable Gelatin Powder (Gelfoam)</td><td>85114912403</td><td>1</td></tr>
+<tr><td>345</td><td>Absorbable Gelatin Sterile Ophthalmic Film (Gelfilm )</td><td>89469556414</td><td>8</td></tr>
+<tr><td>346</td><td>Absorica (Isotretinoin)</td><td>40440398452</td><td>2</td></tr>
+<tr><td>347</td><td>Ablavar (Gadofosveset Trisodium Injection)</td><td>40079314173</td><td>2</td></tr>
+<tr><td>348</td><td>Abobotulinumtoxin A Injection (Dysport)</td><td>85356239226</td><td>6</td></tr>
+<tr><td>349</td><td>Abstral (Fentanyl Sublingual Tablets)</td><td>26692782072</td><td>3</td></tr>
+<tr><td>350</td><td>Abarelix (Plenaxis)</td><td>44754347631</td><td>7</td></tr>
+<tr><td>351</td><td>Abacavir- Dolutegravir- and Lamivudine Film</td><td>38723985744</td><td>6</td></tr>
+<tr><td>352</td><td>Abiraterone Acetate Tablets (Zytiga)</td><td>42238851711</td><td>9</td></tr>
+<tr><td>353</td><td>Absorbable Gelatin Powder (Gelfoam)</td><td>27019144216</td><td>10</td></tr>
+<tr><td>354</td><td>Abelcet (Amphotericin B Injection)</td><td>36960463261</td><td>9</td></tr>
+<tr><td>355</td><td>Absorbable Gelatin Powder (Gelfoam)</td><td>9592662177</td><td>4</td></tr>
+<tr><td>356</td><td>Abstral (Fentanyl Sublingual Tablets)</td><td>17111985574</td><td>9</td></tr>
+<tr><td>357</td><td>Absorica (Isotretinoin)</td><td>18763780357</td><td>6</td></tr>
+<tr><td>358</td><td>Abacavir Sulfate (Ziagen)</td><td>18018933048</td><td>1</td></tr>
+<tr><td>359</td><td>Abatacept (Orencia)</td><td>51788099134</td><td>9</td></tr>
+<tr><td>360</td><td>Abacavir Sulfate and Lamivudine Tablets (Epzicom)</td><td>14818362944</td><td>3</td></tr>
+<tr><td>361</td><td>Abacavir- Dolutegravir- and Lamivudine Film</td><td>87653562081</td><td>4</td></tr>
+<tr><td>362</td><td>Absorbable Gelatin Powder (Gelfoam)</td><td>28218807690</td><td>9</td></tr>
+<tr><td>363</td><td>Absorbable Gelatin Powder (Gelfoam)</td><td>33984120154</td><td>1</td></tr>
+<tr><td>364</td><td>Absorbable Gelatin Powder (Gelfoam)</td><td>66741311886</td><td>8</td></tr>
+<tr><td>365</td><td>Abstral (Fentanyl Sublingual Tablets)</td><td>30523349272</td><td>7</td></tr>
+<tr><td>366</td><td>Absorbable Gelatin Sterile Ophthalmic Film (Gelfilm )</td><td>85348820098</td><td>4</td></tr>
+<tr><td>367</td><td>Abraxane (Albumin</td><td>90950842088</td><td>4</td></tr>
+<tr><td>368</td><td>Abilify (Aripiprazole)</td><td>31819181000</td><td>1</td></tr>
+<tr><td>369</td><td>Ablavar (Gadofosveset Trisodium Injection)</td><td>27505760921</td><td>2</td></tr>
+<tr><td>370</td><td>Absorbable Gelatin Sterile Ophthalmic Film (Gelfilm )</td><td>68962105178</td><td>7</td></tr>
+<tr><td>371</td><td>Absorbable Gelatin Dental Sponge (Gelfoam Dental Sponge)</td><td>13789163718</td><td>10</td></tr>
+<tr><td>372</td><td>Absorbable Gelatin Compressed Sponge- USP (Gelfoam Compressed Sponge)</td><td>43422118355</td><td>6</td></tr>
+<tr><td>373</td><td>Abobotulinumtoxin A Injection (Dysport)</td><td>87818218215</td><td>1</td></tr>
+<tr><td>374</td><td>Abilify Maintena (Aripiprazole Extended</td><td>29413328976</td><td>1</td></tr>
+<tr><td>375</td><td>Abacavir Sulfate- Lamivudine- and Zidovudine (Trizivir)</td><td>85388034499</td><td>9</td></tr>
+<tr><td>376</td><td>Abilify (Aripiprazole)</td><td>72654836948</td><td>4</td></tr>
+<tr><td>377</td><td>Absorbable Gelatin Sterile Ophthalmic Film (Gelfilm )</td><td>88806922030</td><td>8</td></tr>
+<tr><td>378</td><td>Abobotulinumtoxin A Injection (Dysport)</td><td>39952993901</td><td>1</td></tr>
+<tr><td>379</td><td>Abilify (Aripiprazole)</td><td>7856975157</td><td>10</td></tr>
+<tr><td>380</td><td>Abelcet (Amphotericin B Injection)</td><td>81836294472</td><td>8</td></tr>
+<tr><td>381</td><td>Abstral (Fentanyl Sublingual Tablets)</td><td>49574868942</td><td>3</td></tr>
+<tr><td>382</td><td>Abacavir Sulfate- Lamivudine- and Zidovudine (Trizivir)</td><td>59562124873</td><td>10</td></tr>
+<tr><td>383</td><td>Abiraterone Acetate Tablets (Zytiga)</td><td>77840923282</td><td>1</td></tr>
+<tr><td>384</td><td>Abacavir Sulfate and Lamivudine Tablets (Epzicom)</td><td>78330946924</td><td>2</td></tr>
+<tr><td>385</td><td>Absorbable Gelatin Sponge- USP (Gelfoam Sponge)</td><td>63911740249</td><td>5</td></tr>
+<tr><td>386</td><td>Abacavir Sulfate- Lamivudine- and Zidovudine (Trizivir)</td><td>59950925570</td><td>9</td></tr>
+<tr><td>387</td><td>Abilify (Aripiprazole)</td><td>29592121249</td><td>8</td></tr>
+<tr><td>388</td><td>Abarelix (Plenaxis)</td><td>56529193639</td><td>6</td></tr>
+<tr><td>389</td><td>Abiraterone Acetate Tablets (Zytiga)</td><td>90625950426</td><td>2</td></tr>
+<tr><td>390</td><td>Abacavir- Dolutegravir- and Lamivudine Film</td><td>49996786279</td><td>4</td></tr>
+<tr><td>391</td><td>Abacavir Sulfate (Ziagen)</td><td>64175742590</td><td>8</td></tr>
+<tr><td>392</td><td>Abatacept (Orencia)</td><td>72963080597</td><td>10</td></tr>
+<tr><td>393</td><td>Abaloparatide Injection (Tymlos)</td><td>69419941796</td><td>4</td></tr>
+<tr><td>394</td><td>Abiraterone Acetate Tablets (Zytiga)</td><td>77235860289</td><td>7</td></tr>
+<tr><td>395</td><td>Abatacept (Orencia)</td><td>23659631679</td><td>4</td></tr>
+<tr><td>396</td><td>Abacavir Sulfate (Ziagen)</td><td>88982847145</td><td>4</td></tr>
+<tr><td>397</td><td>Abarelix (Plenaxis)</td><td>80887365691</td><td>5</td></tr>
+<tr><td>398</td><td>Abilify Maintena (Aripiprazole Extended</td><td>4277119195</td><td>7</td></tr>
+<tr><td>399</td><td>Abraxane (Albumin</td><td>63363530811</td><td>9</td></tr>
+<tr><td>400</td><td>Absorbable Gelatin Sponge- USP (Gelfoam Sponge)</td><td>45139423052</td><td>4</td></tr>
+<tr><td>401</td><td>Abiraterone Acetate Tablets (Zytiga)</td><td>60660728358</td><td>10</td></tr>
+<tr><td>402</td><td>Abilify Maintena (Aripiprazole Extended</td><td>8297480229</td><td>7</td></tr>
+<tr><td>403</td><td>Abobotulinumtoxin A Injection (Dysport)</td><td>8525551281</td><td>10</td></tr>
+<tr><td>404</td><td>Abilify (Aripiprazole)</td><td>2111376276</td><td>9</td></tr>
+<tr><td>405</td><td>Abatacept (Orencia)</td><td>1487604230</td><td>8</td></tr>
+<tr><td>406</td><td>Abacavir Sulfate and Lamivudine Tablets (Epzicom)</td><td>82038385966</td><td>1</td></tr>
+<tr><td>407</td><td>Abacavir Sulfate- Lamivudine- and Zidovudine (Trizivir)</td><td>22793631574</td><td>5</td></tr>
+<tr><td>408</td><td>Abobotulinumtoxin A Injection (Dysport)</td><td>44927763251</td><td>10</td></tr>
+<tr><td>409</td><td>Abacavir Sulfate (Ziagen)</td><td>94968501301</td><td>4</td></tr>
+<tr><td>410</td><td>Abarelix (Plenaxis)</td><td>68722641972</td><td>5</td></tr>
+<tr><td>411</td><td>Abciximab (ReoPro)</td><td>14554241730</td><td>10</td></tr>
+<tr><td>412</td><td>Abstral (Fentanyl Sublingual Tablets)</td><td>32990026200</td><td>8</td></tr>
+<tr><td>413</td><td>Abobotulinumtoxin A Injection (Dysport)</td><td>8298307098</td><td>7</td></tr>
+<tr><td>414</td><td>Abobotulinumtoxin A Injection (Dysport)</td><td>66202849035</td><td>2</td></tr>
+<tr><td>415</td><td>Abacavir Sulfate and Lamivudine Tablets (Epzicom)</td><td>58068615609</td><td>10</td></tr>
+<tr><td>416</td><td>Abiraterone Acetate Tablets (Zytiga)</td><td>549960951.7</td><td>1</td></tr>
+<tr><td>417</td><td>Abstral (Fentanyl Sublingual Tablets)</td><td>10543671326</td><td>1</td></tr>
+<tr><td>418</td><td>Abacavir Sulfate- Lamivudine- and Zidovudine (Trizivir)</td><td>77600253573</td><td>3</td></tr>
+<tr><td>419</td><td>Abacavir Sulfate (Ziagen)</td><td>21726990954</td><td>9</td></tr>
+<tr><td>420</td><td>Abaloparatide Injection (Tymlos)</td><td>89706230906</td><td>2</td></tr>
+<tr><td>421</td><td>Abilify (Aripiprazole)</td><td>92347868676</td><td>7</td></tr>
+<tr><td>422</td><td>Abacavir Sulfate (Ziagen)</td><td>91345979371</td><td>3</td></tr>
+<tr><td>423</td><td>Abiraterone Acetate Tablets (Zytiga)</td><td>40514611172</td><td>10</td></tr>
+<tr><td>424</td><td>Abacavir Sulfate (Ziagen)</td><td>87832318885</td><td>3</td></tr>
+<tr><td>425</td><td>Abacavir Sulfate- Lamivudine- and Zidovudine (Trizivir)</td><td>30522639109</td><td>8</td></tr>
+<tr><td>426</td><td>Abatacept (Orencia)</td><td>40858225021</td><td>1</td></tr>
+<tr><td>427</td><td>Abacavir Sulfate (Ziagen)</td><td>5887737528</td><td>7</td></tr>
+<tr><td>428</td><td>Absorica (Isotretinoin)</td><td>59284420663</td><td>2</td></tr>
+<tr><td>429</td><td>Abelcet (Amphotericin B Injection)</td><td>34152892806</td><td>1</td></tr>
+<tr><td>430</td><td>Abiraterone Acetate Tablets (Zytiga)</td><td>59700287303</td><td>8</td></tr>
+<tr><td>431</td><td>Abacavir- Dolutegravir- and Lamivudine Film</td><td>87796615956</td><td>7</td></tr>
+<tr><td>432</td><td>Abstral (Fentanyl Sublingual Tablets)</td><td>36638203945</td><td>10</td></tr>
+<tr><td>433</td><td>Absorbable Gelatin Sterile Ophthalmic Film (Gelfilm )</td><td>25542654335</td><td>4</td></tr>
+<tr><td>434</td><td>Abilify (Aripiprazole)</td><td>38398191090</td><td>1</td></tr>
+<tr><td>435</td><td>Abstral (Fentanyl Sublingual Tablets)</td><td>50806576779</td><td>3</td></tr>
+<tr><td>436</td><td>Absorbable Gelatin Sponge- USP (Gelfoam Sponge)</td><td>23865459366</td><td>2</td></tr>
+<tr><td>437</td><td>Abilify (Aripiprazole)</td><td>69248077930</td><td>10</td></tr>
+<tr><td>438</td><td>Abilify (Aripiprazole)</td><td>68498791415</td><td>3</td></tr>
+<tr><td>439</td><td>Absorica (Isotretinoin)</td><td>14683592538</td><td>7</td></tr>
+<tr><td>440</td><td>Abacavir Sulfate and Lamivudine Tablets (Epzicom)</td><td>51985651103</td><td>10</td></tr>
+<tr><td>441</td><td>Abiraterone Acetate Tablets (Zytiga)</td><td>81132204508</td><td>3</td></tr>
+<tr><td>442</td><td>Abstral (Fentanyl Sublingual Tablets)</td><td>50942737510</td><td>9</td></tr>
+<tr><td>443</td><td>Abarelix (Plenaxis)</td><td>85581209617</td><td>10</td></tr>
+<tr><td>444</td><td>Abobotulinumtoxin A Injection (Dysport)</td><td>86722986527</td><td>7</td></tr>
+<tr><td>445</td><td>Abilify (Aripiprazole)</td><td>45152601164</td><td>4</td></tr>
+<tr><td>446</td><td>Absorbable Gelatin Dental Sponge (Gelfoam Dental Sponge)</td><td>5262409613</td><td>10</td></tr>
+<tr><td>447</td><td>Abstral (Fentanyl Sublingual Tablets)</td><td>19987572444</td><td>6</td></tr>
+<tr><td>448</td><td>Abraxane (Albumin</td><td>71684445856</td><td>5</td></tr>
+<tr><td>449</td><td>Absorbable Gelatin Dental Sponge (Gelfoam Dental Sponge)</td><td>95116078755</td><td>1</td></tr>
+<tr><td>450</td><td>Abarelix (Plenaxis)</td><td>97502857311</td><td>3</td></tr>
+<tr><td>451</td><td>Abilify (Aripiprazole)</td><td>73278060390</td><td>6</td></tr>
+<tr><td>452</td><td>Abarelix (Plenaxis)</td><td>56865362703</td><td>10</td></tr>
+<tr><td>453</td><td>Abacavir Sulfate and Lamivudine Tablets (Epzicom)</td><td>51699704338</td><td>1</td></tr>
+<tr><td>454</td><td>Abacavir Sulfate- Lamivudine- and Zidovudine (Trizivir)</td><td>30765644644</td><td>6</td></tr>
+<tr><td>455</td><td>Absorica (Isotretinoin)</td><td>31564955241</td><td>6</td></tr>
+<tr><td>456</td><td>Abelcet (Amphotericin B Injection)</td><td>19748227899</td><td>8</td></tr>
+<tr><td>457</td><td>Abobotulinumtoxin A Injection (Dysport)</td><td>9514358418</td><td>2</td></tr>
+<tr><td>458</td><td>Abraxane (Albumin</td><td>77498590091</td><td>10</td></tr>
+<tr><td>459</td><td>Ablavar (Gadofosveset Trisodium Injection)</td><td>99055657894</td><td>5</td></tr>
+<tr><td>460</td><td>Abacavir Sulfate (Ziagen)</td><td>53184068324</td><td>8</td></tr>
+<tr><td>461</td><td>Abarelix (Plenaxis)</td><td>2924815529</td><td>6</td></tr>
+<tr><td>462</td><td>Absorbable Gelatin Compressed Sponge- USP (Gelfoam Compressed Sponge)</td><td>34342378855</td><td>7</td></tr>
+<tr><td>463</td><td>Abarelix (Plenaxis)</td><td>62768253426</td><td>2</td></tr>
+<tr><td>464</td><td>Absorbable Gelatin Dental Sponge (Gelfoam Dental Sponge)</td><td>81131139963</td><td>5</td></tr>
+<tr><td>465</td><td>Abarelix (Plenaxis)</td><td>86680438171</td><td>8</td></tr>
+<tr><td>466</td><td>Abelcet (Amphotericin B Injection)</td><td>34001727441</td><td>7</td></tr>
+<tr><td>467</td><td>Abacavir- Dolutegravir- and Lamivudine Film</td><td>30070877005</td><td>2</td></tr>
+<tr><td>468</td><td>Absorbable Gelatin Powder (Gelfoam)</td><td>31907348983</td><td>9</td></tr>
+<tr><td>469</td><td>Abobotulinumtoxin A Injection (Dysport)</td><td>87689169028</td><td>3</td></tr>
+<tr><td>470</td><td>Absorbable Gelatin Powder (Gelfoam)</td><td>25649274261</td><td>5</td></tr>
+<tr><td>471</td><td>Abacavir- Dolutegravir- and Lamivudine Film</td><td>45322718967</td><td>1</td></tr>
+<tr><td>472</td><td>Abstral (Fentanyl Sublingual Tablets)</td><td>88275154353</td><td>8</td></tr>
+<tr><td>473</td><td>Abiraterone Acetate Tablets (Zytiga)</td><td>89006112778</td><td>2</td></tr>
+<tr><td>474</td><td>Abacavir- Dolutegravir- and Lamivudine Film</td><td>95305469911</td><td>6</td></tr>
+<tr><td>475</td><td>Absorbable Gelatin Sponge- USP (Gelfoam Sponge)</td><td>93240651093</td><td>10</td></tr>
+<tr><td>476</td><td>Absorica (Isotretinoin)</td><td>34551329103</td><td>10</td></tr>
+<tr><td>477</td><td>Absorbable Gelatin Sponge- USP (Gelfoam Sponge)</td><td>4607709357</td><td>9</td></tr>
+<tr><td>478</td><td>Abarelix (Plenaxis)</td><td>55149109634</td><td>9</td></tr>
+<tr><td>479</td><td>Ablavar (Gadofosveset Trisodium Injection)</td><td>7411964032</td><td>9</td></tr>
+<tr><td>480</td><td>Absorbable Gelatin Compressed Sponge- USP (Gelfoam Compressed Sponge)</td><td>94393232196</td><td>8</td></tr>
+<tr><td>481</td><td>Absorbable Gelatin Sponge- USP (Gelfoam Sponge)</td><td>96483442830</td><td>3</td></tr>
+<tr><td>482</td><td>Abiraterone Acetate Tablets (Zytiga)</td><td>91414558341</td><td>6</td></tr>
+<tr><td>483</td><td>Abaloparatide Injection (Tymlos)</td><td>66951800300</td><td>7</td></tr>
+<tr><td>484</td><td>Abstral (Fentanyl Sublingual Tablets)</td><td>58803626164</td><td>2</td></tr>
+<tr><td>485</td><td>Abacavir Sulfate and Lamivudine Tablets (Epzicom)</td><td>64956415422</td><td>3</td></tr>
+<tr><td>486</td><td>Abatacept (Orencia)</td><td>90555255774</td><td>5</td></tr>
+<tr><td>487</td><td>Abelcet (Amphotericin B Injection)</td><td>18195305198</td><td>4</td></tr>
+<tr><td>488</td><td>Abiraterone Acetate Tablets (Zytiga)</td><td>39483704739</td><td>7</td></tr>
+<tr><td>489</td><td>Abacavir Sulfate (Ziagen)</td><td>98638195528</td><td>7</td></tr>
+<tr><td>490</td><td>Abobotulinumtoxin A Injection (Dysport)</td><td>52390933940</td><td>8</td></tr>
+<tr><td>491</td><td>Abacavir- Dolutegravir- and Lamivudine Film</td><td>66826275535</td><td>3</td></tr>
+<tr><td>492</td><td>Abobotulinumtoxin A Injection (Dysport)</td><td>27013142611</td><td>6</td></tr>
+<tr><td>493</td><td>Abacavir Sulfate (Ziagen)</td><td>95785566900</td><td>6</td></tr>
+<tr><td>494</td><td>Ablavar (Gadofosveset Trisodium Injection)</td><td>85097140633</td><td>1</td></tr>
+<tr><td>495</td><td>Abaloparatide Injection (Tymlos)</td><td>74461314692</td><td>8</td></tr>
+<tr><td>496</td><td>Abacavir Sulfate- Lamivudine- and Zidovudine (Trizivir)</td><td>71604228759</td><td>6</td></tr>
+<tr><td>497</td><td>Abilify (Aripiprazole)</td><td>39035340075</td><td>8</td></tr>
+<tr><td>498</td><td>Absorbable Gelatin Sponge- USP (Gelfoam Sponge)</td><td>57403217068</td><td>5</td></tr>
+<tr><td>499</td><td>Ablavar (Gadofosveset Trisodium Injection)</td><td>2859710016</td><td>3</td></tr>
+<tr><td>500</td><td>Abstral (Fentanyl Sublingual Tablets)</td><td>81774975680</td><td>3</td></tr>
+<tr><td>501</td><td>Abelcet (Amphotericin B Injection)</td><td>2475410636</td><td>5</td></tr>
+<tr><td>502</td><td>Abilify Maintena (Aripiprazole Extended</td><td>53158415580</td><td>7</td></tr>
+<tr><td>503</td><td>Abelcet (Amphotericin B Injection)</td><td>71220482956</td><td>6</td></tr>
+<tr><td>504</td><td>Abilify (Aripiprazole)</td><td>6764788609</td><td>9</td></tr>
+<tr><td>505</td><td>Abacavir Sulfate- Lamivudine- and Zidovudine (Trizivir)</td><td>90658935354</td><td>5</td></tr>
+<tr><td>506</td><td>Abraxane (Albumin</td><td>8173266070</td><td>8</td></tr>
+<tr><td>507</td><td>Abacavir Sulfate (Ziagen)</td><td>61224992426</td><td>9</td></tr>
+<tr><td>508</td><td>Abiraterone Acetate Tablets (Zytiga)</td><td>81848376947</td><td>6</td></tr>
+<tr><td>509</td><td>Abraxane (Albumin</td><td>48591611108</td><td>10</td></tr>
+<tr><td>510</td><td>Abiraterone Acetate Tablets (Zytiga)</td><td>20481672116</td><td>6</td></tr>
+<tr><td>511</td><td>Abarelix (Plenaxis)</td><td>60064059735</td><td>3</td></tr>
+<tr><td>512</td><td>Abacavir Sulfate (Ziagen)</td><td>50126327094</td><td>6</td></tr>
+<tr><td>513</td><td>Abacavir Sulfate and Lamivudine Tablets (Epzicom)</td><td>90602339740</td><td>5</td></tr>
+<tr><td>514</td><td>Ablavar (Gadofosveset Trisodium Injection)</td><td>22793667958</td><td>8</td></tr>
+<tr><td>515</td><td>Absorbable Gelatin Compressed Sponge- USP (Gelfoam Compressed Sponge)</td><td>54247828603</td><td>8</td></tr>
+<tr><td>516</td><td>Abstral (Fentanyl Sublingual Tablets)</td><td>14015410819</td><td>5</td></tr>
+<tr><td>517</td><td>Abacavir Sulfate and Lamivudine Tablets (Epzicom)</td><td>5498417084</td><td>6</td></tr>
+<tr><td>518</td><td>Abobotulinumtoxin A Injection (Dysport)</td><td>29333528149</td><td>10</td></tr>
+<tr><td>519</td><td>Abacavir Sulfate and Lamivudine Tablets (Epzicom)</td><td>48923689932</td><td>9</td></tr>
+<tr><td>520</td><td>Abacavir Sulfate (Ziagen)</td><td>29985814336</td><td>9</td></tr>
+<tr><td>521</td><td>Absorbable Gelatin Sponge- USP (Gelfoam Sponge)</td><td>32806361975</td><td>1</td></tr>
+<tr><td>522</td><td>Absorica (Isotretinoin)</td><td>72903192622</td><td>6</td></tr>
+<tr><td>523</td><td>Abacavir Sulfate and Lamivudine Tablets (Epzicom)</td><td>75584984556</td><td>8</td></tr>
+<tr><td>524</td><td>Abiraterone Acetate Tablets (Zytiga)</td><td>10033522739</td><td>10</td></tr>
+<tr><td>525</td><td>Absorbable Gelatin Dental Sponge (Gelfoam Dental Sponge)</td><td>94017107101</td><td>2</td></tr>
+<tr><td>526</td><td>Abacavir Sulfate and Lamivudine Tablets (Epzicom)</td><td>67085809840</td><td>5</td></tr>
+<tr><td>527</td><td>Abilify (Aripiprazole)</td><td>2204338288</td><td>5</td></tr>
+<tr><td>528</td><td>Abacavir Sulfate- Lamivudine- and Zidovudine (Trizivir)</td><td>21628460777</td><td>10</td></tr>
+<tr><td>529</td><td>Abciximab (ReoPro)</td><td>9026531815</td><td>3</td></tr>
+<tr><td>530</td><td>Abciximab (ReoPro)</td><td>88031252467</td><td>6</td></tr>
+<tr><td>531</td><td>Abacavir Sulfate (Ziagen)</td><td>65946825111</td><td>7</td></tr>
+<tr><td>532</td><td>Abarelix (Plenaxis)</td><td>26200252775</td><td>3</td></tr>
+<tr><td>533</td><td>Abacavir- Dolutegravir- and Lamivudine Film</td><td>70018201718</td><td>2</td></tr>
+<tr><td>534</td><td>Absorbable Gelatin Compressed Sponge- USP (Gelfoam Compressed Sponge)</td><td>99042758954</td><td>1</td></tr>
+<tr><td>535</td><td>Abarelix (Plenaxis)</td><td>1363784492</td><td>9</td></tr>
+<tr><td>536</td><td>Abaloparatide Injection (Tymlos)</td><td>34233092810</td><td>3</td></tr>
+<tr><td>537</td><td>Abatacept (Orencia)</td><td>78832332131</td><td>10</td></tr>
+<tr><td>538</td><td>Abraxane (Albumin</td><td>32000391964</td><td>9</td></tr>
+<tr><td>539</td><td>Absorbable Gelatin Sponge- USP (Gelfoam Sponge)</td><td>13789761414</td><td>3</td></tr>
+<tr><td>540</td><td>Abacavir Sulfate (Ziagen)</td><td>36202085568</td><td>4</td></tr>
+<tr><td>541</td><td>Abstral (Fentanyl Sublingual Tablets)</td><td>82156577807</td><td>5</td></tr>
+<tr><td>542</td><td>Abilify (Aripiprazole)</td><td>71382565699</td><td>10</td></tr>
+<tr><td>543</td><td>Abacavir Sulfate (Ziagen)</td><td>83591343923</td><td>1</td></tr>
+<tr><td>544</td><td>Abatacept (Orencia)</td><td>71086979349</td><td>4</td></tr>
+<tr><td>545</td><td>Abciximab (ReoPro)</td><td>97600493529</td><td>6</td></tr>
+<tr><td>546</td><td>Abacavir Sulfate- Lamivudine- and Zidovudine (Trizivir)</td><td>43933649573</td><td>5</td></tr>
+<tr><td>547</td><td>Abstral (Fentanyl Sublingual Tablets)</td><td>29232077738</td><td>10</td></tr>
+<tr><td>548</td><td>Abacavir Sulfate (Ziagen)</td><td>92782174199</td><td>6</td></tr>
+<tr><td>549</td><td>Abilify (Aripiprazole)</td><td>2429536513</td><td>1</td></tr>
+<tr><td>550</td><td>Ablavar (Gadofosveset Trisodium Injection)</td><td>14732095211</td><td>5</td></tr>
+<tr><td>551</td><td>Ablavar (Gadofosveset Trisodium Injection)</td><td>99644689443</td><td>10</td></tr>
+<tr><td>552</td><td>Abacavir Sulfate (Ziagen)</td><td>61298935263</td><td>3</td></tr>
+<tr><td>553</td><td>Ablavar (Gadofosveset Trisodium Injection)</td><td>54177245534</td><td>4</td></tr>
+<tr><td>554</td><td>Absorbable Gelatin Dental Sponge (Gelfoam Dental Sponge)</td><td>43586963635</td><td>4</td></tr>
+<tr><td>555</td><td>Abilify Maintena (Aripiprazole Extended</td><td>76392864999</td><td>10</td></tr>
+<tr><td>556</td><td>Abraxane (Albumin</td><td>7709170781</td><td>6</td></tr>
+<tr><td>557</td><td>Absorica (Isotretinoin)</td><td>71032402011</td><td>9</td></tr>
+<tr><td>558</td><td>Absorbable Gelatin Dental Sponge (Gelfoam Dental Sponge)</td><td>9849556041</td><td>9</td></tr>
+<tr><td>559</td><td>Abatacept (Orencia)</td><td>29236488492</td><td>4</td></tr>
+<tr><td>560</td><td>Abilify (Aripiprazole)</td><td>92084342065</td><td>2</td></tr>
+<tr><td>561</td><td>Abacavir- Dolutegravir- and Lamivudine Film</td><td>34139198467</td><td>8</td></tr>
+<tr><td>562</td><td>Abraxane (Albumin</td><td>18329893855</td><td>1</td></tr>
+<tr><td>563</td><td>Absorbable Gelatin Sterile Ophthalmic Film (Gelfilm )</td><td>8907730954</td><td>6</td></tr>
+<tr><td>564</td><td>Abraxane (Albumin</td><td>65710322489</td><td>1</td></tr>
+<tr><td>565</td><td>Abiraterone Acetate Tablets (Zytiga)</td><td>26161759250</td><td>9</td></tr>
+<tr><td>566</td><td>Abacavir Sulfate and Lamivudine Tablets (Epzicom)</td><td>95543700749</td><td>8</td></tr>
+<tr><td>567</td><td>Ablavar (Gadofosveset Trisodium Injection)</td><td>47323367718</td><td>9</td></tr>
+<tr><td>568</td><td>Abacavir Sulfate- Lamivudine- and Zidovudine (Trizivir)</td><td>22612159657</td><td>9</td></tr>
+<tr><td>569</td><td>Ablavar (Gadofosveset Trisodium Injection)</td><td>51488597549</td><td>9</td></tr>
+<tr><td>570</td><td>Abacavir- Dolutegravir- and Lamivudine Film</td><td>98230500531</td><td>1</td></tr>
+<tr><td>571</td><td>Abacavir Sulfate- Lamivudine- and Zidovudine (Trizivir)</td><td>90295416194</td><td>4</td></tr>
+<tr><td>572</td><td>Abiraterone Acetate Tablets (Zytiga)</td><td>32532737363</td><td>4</td></tr>
+<tr><td>573</td><td>Abaloparatide Injection (Tymlos)</td><td>6204578034</td><td>1</td></tr>
+<tr><td>574</td><td>Absorbable Gelatin Sterile Ophthalmic Film (Gelfilm )</td><td>76220872244</td><td>10</td></tr>
+<tr><td>575</td><td>Abilify (Aripiprazole)</td><td>44509827638</td><td>9</td></tr>
+<tr><td>576</td><td>Abraxane (Albumin</td><td>64116347481</td><td>8</td></tr>
+<tr><td>577</td><td>Abobotulinumtoxin A Injection (Dysport)</td><td>3811091878</td><td>9</td></tr>
+<tr><td>578</td><td>Abciximab (ReoPro)</td><td>4356238159</td><td>8</td></tr>
+<tr><td>579</td><td>Abacavir Sulfate and Lamivudine Tablets (Epzicom)</td><td>4812130980</td><td>1</td></tr>
+<tr><td>580</td><td>Abiraterone Acetate Tablets (Zytiga)</td><td>19292166037</td><td>10</td></tr>
+<tr><td>581</td><td>Abiraterone Acetate Tablets (Zytiga)</td><td>62917947591</td><td>7</td></tr>
+<tr><td>582</td><td>Abacavir Sulfate (Ziagen)</td><td>36986905495</td><td>3</td></tr>
+<tr><td>583</td><td>Abatacept (Orencia)</td><td>36120958592</td><td>3</td></tr>
+<tr><td>584</td><td>Abstral (Fentanyl Sublingual Tablets)</td><td>74523406828</td><td>2</td></tr>
+<tr><td>585</td><td>Abelcet (Amphotericin B Injection)</td><td>11773377607</td><td>1</td></tr>
+<tr><td>586</td><td>Absorbable Gelatin Sterile Ophthalmic Film (Gelfilm )</td><td>26145368210</td><td>3</td></tr>
+<tr><td>587</td><td>Abatacept (Orencia)</td><td>91566186209</td><td>10</td></tr>
+<tr><td>588</td><td>Abarelix (Plenaxis)</td><td>90700281358</td><td>8</td></tr>
+<tr><td>589</td><td>Absorbable Gelatin Dental Sponge (Gelfoam Dental Sponge)</td><td>82465474460</td><td>2</td></tr>
+<tr><td>590</td><td>Absorbable Gelatin Compressed Sponge- USP (Gelfoam Compressed Sponge)</td><td>71583634694</td><td>10</td></tr>
+<tr><td>591</td><td>Abatacept (Orencia)</td><td>23349649568</td><td>2</td></tr>
+<tr><td>592</td><td>Ablavar (Gadofosveset Trisodium Injection)</td><td>51387370411</td><td>10</td></tr>
+<tr><td>593</td><td>Abilify Maintena (Aripiprazole Extended</td><td>70526058425</td><td>10</td></tr>
+<tr><td>594</td><td>Abacavir Sulfate and Lamivudine Tablets (Epzicom)</td><td>16768909217</td><td>6</td></tr>
+<tr><td>595</td><td>Abilify Maintena (Aripiprazole Extended</td><td>39380834991</td><td>7</td></tr>
+<tr><td>596</td><td>Abacavir- Dolutegravir- and Lamivudine Film</td><td>72225431479</td><td>10</td></tr>
+<tr><td>597</td><td>Abilify Maintena (Aripiprazole Extended</td><td>84453464308</td><td>8</td></tr>
+<tr><td>598</td><td>Abacavir Sulfate and Lamivudine Tablets (Epzicom)</td><td>22603922927</td><td>3</td></tr>
+<tr><td>599</td><td>Abelcet (Amphotericin B Injection)</td><td>80161729882</td><td>4</td></tr>
+<tr><td>600</td><td>Absorbable Gelatin Compressed Sponge- USP (Gelfoam Compressed Sponge)</td><td>47404579180</td><td>5</td></tr>
+<tr><td>601</td><td>Absorbable Gelatin Sponge- USP (Gelfoam Sponge)</td><td>84867370723</td><td>9</td></tr>
+<tr><td>602</td><td>Abilify Maintena (Aripiprazole Extended</td><td>47269353836</td><td>1</td></tr>
+<tr><td>603</td><td>Abilify Maintena (Aripiprazole Extended</td><td>64707795228</td><td>3</td></tr>
+<tr><td>604</td><td>Abacavir- Dolutegravir- and Lamivudine Film</td><td>83301560231</td><td>3</td></tr>
+<tr><td>605</td><td>Abiraterone Acetate Tablets (Zytiga)</td><td>34624044423</td><td>2</td></tr>
+<tr><td>606</td><td>Absorbable Gelatin Dental Sponge (Gelfoam Dental Sponge)</td><td>54044161185</td><td>7</td></tr>
+<tr><td>607</td><td>Abaloparatide Injection (Tymlos)</td><td>48728166234</td><td>5</td></tr>
+<tr><td>608</td><td>Abilify (Aripiprazole)</td><td>60978551693</td><td>8</td></tr>
+<tr><td>609</td><td>Abelcet (Amphotericin B Injection)</td><td>58768111926</td><td>3</td></tr>
+<tr><td>610</td><td>Abraxane (Albumin</td><td>51782010076</td><td>2</td></tr>
+<tr><td>611</td><td>Abilify (Aripiprazole)</td><td>53938541321</td><td>1</td></tr>
+<tr><td>612</td><td>Abilify (Aripiprazole)</td><td>71957736732</td><td>2</td></tr>
+<tr><td>613</td><td>Abilify Maintena (Aripiprazole Extended</td><td>73467585781</td><td>4</td></tr>
+<tr><td>614</td><td>Abatacept (Orencia)</td><td>17813415987</td><td>8</td></tr>
+<tr><td>615</td><td>Absorbable Gelatin Sponge- USP (Gelfoam Sponge)</td><td>10022804040</td><td>5</td></tr>
+<tr><td>616</td><td>Abelcet (Amphotericin B Injection)</td><td>57633890643</td><td>1</td></tr>
+<tr><td>617</td><td>Abobotulinumtoxin A Injection (Dysport)</td><td>37406948605</td><td>1</td></tr>
+<tr><td>618</td><td>Abacavir Sulfate- Lamivudine- and Zidovudine (Trizivir)</td><td>80880447807</td><td>5</td></tr>
+<tr><td>619</td><td>Abacavir Sulfate- Lamivudine- and Zidovudine (Trizivir)</td><td>30223955250</td><td>4</td></tr>
+<tr><td>620</td><td>Abarelix (Plenaxis)</td><td>16635183334</td><td>7</td></tr>
+<tr><td>621</td><td>Abarelix (Plenaxis)</td><td>19864029724</td><td>8</td></tr>
+<tr><td>622</td><td>Abarelix (Plenaxis)</td><td>11782221478</td><td>7</td></tr>
+<tr><td>623</td><td>Abobotulinumtoxin A Injection (Dysport)</td><td>21999866835</td><td>7</td></tr>
+<tr><td>624</td><td>Abilify (Aripiprazole)</td><td>48950508611</td><td>6</td></tr>
+<tr><td>625</td><td>Absorbable Gelatin Powder (Gelfoam)</td><td>5319912565</td><td>5</td></tr>
+<tr><td>626</td><td>Abacavir Sulfate and Lamivudine Tablets (Epzicom)</td><td>37885037750</td><td>9</td></tr>
+<tr><td>627</td><td>Abiraterone Acetate Tablets (Zytiga)</td><td>25389881205</td><td>3</td></tr>
+<tr><td>628</td><td>Abraxane (Albumin</td><td>19996722260</td><td>8</td></tr>
+<tr><td>629</td><td>Abilify (Aripiprazole)</td><td>331840048.9</td><td>8</td></tr>
+<tr><td>630</td><td>Abilify Maintena (Aripiprazole Extended</td><td>69615319012</td><td>8</td></tr>
+<tr><td>631</td><td>Abacavir Sulfate- Lamivudine- and Zidovudine (Trizivir)</td><td>4992571944</td><td>1</td></tr>
+<tr><td>632</td><td>Abstral (Fentanyl Sublingual Tablets)</td><td>93715153724</td><td>10</td></tr>
+<tr><td>633</td><td>Abacavir Sulfate- Lamivudine- and Zidovudine (Trizivir)</td><td>38827963534</td><td>8</td></tr>
+<tr><td>634</td><td>Abilify (Aripiprazole)</td><td>64453525647</td><td>1</td></tr>
+<tr><td>635</td><td>Abatacept (Orencia)</td><td>90996901904</td><td>5</td></tr>
+<tr><td>636</td><td>Absorica (Isotretinoin)</td><td>17316342509</td><td>4</td></tr>
+<tr><td>637</td><td>Abacavir Sulfate- Lamivudine- and Zidovudine (Trizivir)</td><td>21143031133</td><td>6</td></tr>
+<tr><td>638</td><td>Abacavir Sulfate (Ziagen)</td><td>59346821776</td><td>3</td></tr>
+<tr><td>639</td><td>Abacavir Sulfate (Ziagen)</td><td>75991169845</td><td>9</td></tr>
+<tr><td>640</td><td>Absorbable Gelatin Sterile Ophthalmic Film (Gelfilm )</td><td>98041142612</td><td>8</td></tr>
+<tr><td>641</td><td>Ablavar (Gadofosveset Trisodium Injection)</td><td>51359956784</td><td>8</td></tr>
+<tr><td>642</td><td>Abacavir Sulfate (Ziagen)</td><td>5907942415</td><td>10</td></tr>
+<tr><td>643</td><td>Abarelix (Plenaxis)</td><td>61078598599</td><td>7</td></tr>
+<tr><td>644</td><td>Absorbable Gelatin Powder (Gelfoam)</td><td>91434959364</td><td>3</td></tr>
+<tr><td>645</td><td>Abilify (Aripiprazole)</td><td>65467826631</td><td>10</td></tr>
+<tr><td>646</td><td>Abiraterone Acetate Tablets (Zytiga)</td><td>18617181572</td><td>1</td></tr>
+<tr><td>647</td><td>Abacavir Sulfate- Lamivudine- and Zidovudine (Trizivir)</td><td>4577512425</td><td>8</td></tr>
+<tr><td>648</td><td>Abatacept (Orencia)</td><td>13447712798</td><td>3</td></tr>
+<tr><td>649</td><td>Abraxane (Albumin</td><td>73308857493</td><td>10</td></tr>
+<tr><td>650</td><td>Abstral (Fentanyl Sublingual Tablets)</td><td>52485686598</td><td>2</td></tr>
+<tr><td>651</td><td>Abstral (Fentanyl Sublingual Tablets)</td><td>92548152042</td><td>2</td></tr>
+<tr><td>652</td><td>Abelcet (Amphotericin B Injection)</td><td>12139071878</td><td>2</td></tr>
+<tr><td>653</td><td>Abacavir- Dolutegravir- and Lamivudine Film</td><td>8318831951</td><td>5</td></tr>
+<tr><td>654</td><td>Abacavir Sulfate and Lamivudine Tablets (Epzicom)</td><td>67133776238</td><td>6</td></tr>
+<tr><td>655</td><td>Abilify Maintena (Aripiprazole Extended</td><td>82072514026</td><td>2</td></tr>
+<tr><td>656</td><td>Absorbable Gelatin Sterile Ophthalmic Film (Gelfilm )</td><td>99309008489</td><td>3</td></tr>
+<tr><td>657</td><td>Abiraterone Acetate Tablets (Zytiga)</td><td>76073032343</td><td>2</td></tr>
+<tr><td>658</td><td>Abacavir Sulfate- Lamivudine- and Zidovudine (Trizivir)</td><td>87993103253</td><td>10</td></tr>
+<tr><td>659</td><td>Abiraterone Acetate Tablets (Zytiga)</td><td>45865517132</td><td>5</td></tr>
+<tr><td>660</td><td>Abacavir Sulfate and Lamivudine Tablets (Epzicom)</td><td>65433984097</td><td>8</td></tr>
+<tr><td>661</td><td>Absorbable Gelatin Powder (Gelfoam)</td><td>92928818168</td><td>2</td></tr>
+<tr><td>662</td><td>Abobotulinumtoxin A Injection (Dysport)</td><td>42604874627</td><td>8</td></tr>
+<tr><td>663</td><td>Abacavir Sulfate- Lamivudine- and Zidovudine (Trizivir)</td><td>23223165763</td><td>3</td></tr>
+<tr><td>664</td><td>Abacavir Sulfate and Lamivudine Tablets (Epzicom)</td><td>94159872269</td><td>8</td></tr>
+<tr><td>665</td><td>Abelcet (Amphotericin B Injection)</td><td>52344418996</td><td>5</td></tr>
+<tr><td>666</td><td>Absorica (Isotretinoin)</td><td>55014417214</td><td>5</td></tr>
+<tr><td>667</td><td>Abciximab (ReoPro)</td><td>28539533324</td><td>2</td></tr>
+<tr><td>668</td><td>Abacavir Sulfate (Ziagen)</td><td>20560254693</td><td>2</td></tr>
+<tr><td>669</td><td>Abacavir Sulfate- Lamivudine- and Zidovudine (Trizivir)</td><td>36190556156</td><td>2</td></tr>
+<tr><td>670</td><td>Ablavar (Gadofosveset Trisodium Injection)</td><td>50681747810</td><td>4</td></tr>
+<tr><td>671</td><td>Absorica (Isotretinoin)</td><td>57350826921</td><td>3</td></tr>
+<tr><td>672</td><td>Abraxane (Albumin</td><td>89014535334</td><td>1</td></tr>
+<tr><td>673</td><td>Absorbable Gelatin Compressed Sponge- USP (Gelfoam Compressed Sponge)</td><td>50746154217</td><td>6</td></tr>
+<tr><td>674</td><td>Abacavir Sulfate (Ziagen)</td><td>34012301881</td><td>4</td></tr>
+<tr><td>675</td><td>Abstral (Fentanyl Sublingual Tablets)</td><td>47172193032</td><td>2</td></tr>
+<tr><td>676</td><td>Abacavir Sulfate- Lamivudine- and Zidovudine (Trizivir)</td><td>64204678289</td><td>8</td></tr>
+<tr><td>677</td><td>Abaloparatide Injection (Tymlos)</td><td>6702585350</td><td>10</td></tr>
+<tr><td>678</td><td>Abacavir Sulfate and Lamivudine Tablets (Epzicom)</td><td>1267321609</td><td>5</td></tr>
+<tr><td>679</td><td>Abarelix (Plenaxis)</td><td>82964230657</td><td>3</td></tr>
+<tr><td>680</td><td>Abacavir Sulfate and Lamivudine Tablets (Epzicom)</td><td>38939036836</td><td>9</td></tr>
+<tr><td>681</td><td>Abacavir Sulfate (Ziagen)</td><td>72261878533</td><td>1</td></tr>
+<tr><td>682</td><td>Abacavir Sulfate (Ziagen)</td><td>3860903403</td><td>2</td></tr>
+</tbody></table></body></html>
